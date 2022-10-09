@@ -1,14 +1,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
+import Home from '../views/HomeView.vue'
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+import 'uikit/dist/css/uikit.min.css'
+import Services from "@/views/Services";
+import Booking from "@/views/Booking";
 Vue.use(VueRouter)
+UIkit.use(Icons);
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: Home
   },
   {
     path: '/about',
@@ -19,7 +24,20 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
     }
+
+  },
+
+  {
+    path:'/Services',
+    name:'Services',
+    component:Services
+  },
+  {
+    path:'Booking',
+    name:'Booking',
+    component:Booking
   }
+
 ]
 
 const router = new VueRouter({
