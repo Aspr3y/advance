@@ -34,7 +34,7 @@ const signInWithGoogle = () =>{
    <section
     class="flex w-full"
    >
-        <div class="h-160 w-1/2 bg-green-400 py-16 px-8 flex flex-col space-y-8 justify-between items-center">
+        <div class="h-160 w-1/2 bg-indigo-400 py-16 px-8 flex flex-col space-y-8 justify-between items-center">
             
            <div class="flex flex-col justify-center items-center space-y-8 w-full">
                 <h1 class="uppercase leading-6 text-7xl text-white font-light">
@@ -67,8 +67,8 @@ const signInWithGoogle = () =>{
 
            <div>
             <button
-             @click="register()"
-             class="bg-indigo-400 w-full px-28 py-2 rounded text-white uppercase
+             v-on:click="register"
+             class="bg-green-500 w-full px-28 py-2 rounded text-white uppercase
              transition-all ease-in hover:rounded-xl hover:bg-white hover:text-indigo-500"
             >
                 Create  an Account
@@ -79,8 +79,8 @@ const signInWithGoogle = () =>{
 
         <div class="h-160 w-1/2 bg-green-50 flex flex-col space-y-6 justify-center items-center">
             <img
-             class="w-full h-128 object-cover"
-             src="https://images.unsplash.com/photo-1601327708382-752212e9e853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1144&q=80"
+             class="w-full h-160 object-cover"
+             src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
             />
         </div>
    </section>
