@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="font-RM bg-green-50">
+  <section class="font-RM bg-green-100">
     <navbar/>
     <router-view/>
   </section>
