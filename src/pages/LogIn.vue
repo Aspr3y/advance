@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import {ref} from 'vue';
-import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
+import {getAuth, 
+  signInWithEmailAndPassword,  
+  GoogleAuthProvider,
+  signInWithPopup
+} from "firebase/auth";
 import { useRouter } from 'vue-router';
 
 const email = ref<string>("");
@@ -37,19 +41,30 @@ if(email.value.length === 0 && password.value.length === 0){
     });
 }
 }
+
+const loginWithGoogle = () =>{
+  const provider = new GoogleAuthProvider();
+    signInWithPopup(getAuth(),provider)
+    .then( (result) =>{
+        router.push('/booking')
+    }).catch((err) =>{
+        alert(err.message);
+  });
+}
 </script>
 
 <template>
     <section
     class="flex w-full"
    >
-        <div class="h-160 w-1/2 bg-green-500 py-16 px-8 flex flex-col space-y-8 justify-between items-center">
+        <div class="h-160 w-1/2 bg-green-300 py-16 px-8 flex flex-col space-y-8 justify-between items-center">
             
            <div class="flex flex-col justify-center items-center space-y-8 w-full">
-                <h1 class="uppercase leading-6 text-7xl text-white font-light">
+                <h1 class="uppercase leading-6 subpixel-antialiased text-7xl text-green-500 
+                  font-light">
                     Welcome Back
                 </h1>
-                <p class="uppercase leading-6 text-white font-light">
+                <p class="uppercase leading-6 font-light text-green-700">
                     Lorem ipsum
                 </p>
            </div>
@@ -66,7 +81,7 @@ if(email.value.length === 0 && password.value.length === 0){
                <input
                  v-model="email"
                  type="email" 
-                 class="transition-all placeholder-gray-400 font-semibold 
+                 class="transition-all placeholder-green-400 font-medium  
                   py-1 px-4 rounded-md focus:outline-none border-none ring-3
                  focus:ring-indigo-400 focus:ring-4 text-green-600"
                  placeholder="Please enter an email address"
@@ -75,18 +90,38 @@ if(email.value.length === 0 && password.value.length === 0){
                <input
                  v-model="password"
                  type="password" 
-                 class="transition-all placeholder-gray-400 font-semibold 
+                 class="transition-all placeholder-green-400 font-medium 
                   py-1 px-4 rounded-md focus:outline-none border-none ring-3
-                 focus:ring-indigo-400 focus:ring-4 text-green-600"
+                 focus:ring-indigo-400 focus:ring-4 text-green-600 "
                  placeholder="Please enter a password"
                />
+
+               <h1
+                class="text-center text-2xl font-medium leading-6 subpixel-antialiased
+                text-green-600 uppercase mt-4"
+               >
+                or
+               </h1>
+
+               <button
+                @click="loginWithGoogle"
+                class="bg-green-50 py-1 flex uppercase text-xl leading-6 subpixel-antialiased items-center 
+                justify-center space-x-0 rounded-md transition-all ease-in-out hover:ring-4 hover:focus:ring-google-g1"
+               >
+                  <h1 class="text-google-g1">g</h1>
+                  <h1 class="text-google-g2">o</h1>
+                  <h1 class="text-google-g3">o</h1>
+                  <h1 class="text-google-g1">g</h1>
+                  <h1 class="text-google-g4">l</h1>
+                  <h1 class="text-google-g2">e</h1>
+               </button>
            </div>
 
            <div>
             <button
              @click="login"
-             class="bg-indigo-400 w-full px-28 py-2 rounded text-white uppercase
-             transition-all ease-in hover:rounded-xl hover:bg-white hover:text-indigo-500"
+             class="bg-indigo-500 w-full px-28 py-2 rounded text-white uppercase
+             transition-all ease-in hover:bg-green-50 hover:text-green-600 hover:rounded-3xl"
             >
                Login
             </button>
@@ -97,7 +132,7 @@ if(email.value.length === 0 && password.value.length === 0){
         <div class="h-160 w-1/2 bg-green-50 flex flex-col space-y-6 justify-center items-center">
             <img
              class="w-full h-160 object-cover"
-             src="https://images.unsplash.com/photo-1663856542320-639f788ac5b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+             src="/LogImg.jpg"
             />
         </div>
    </section>
