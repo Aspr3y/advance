@@ -43,7 +43,7 @@ if(email.value.length === 0 && password.value.length === 0){
     <section
     class="flex w-full"
    >
-        <div class="h-160 w-1/2 bg-green-400 py-16 px-8 flex flex-col space-y-8 justify-between items-center">
+        <div class="h-160 w-1/2 bg-green-500 py-16 px-8 flex flex-col space-y-8 justify-between items-center">
             
            <div class="flex flex-col justify-center items-center space-y-8 w-full">
                 <h1 class="uppercase leading-6 text-7xl text-white font-light">
