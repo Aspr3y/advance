@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{RM:" 'Roboto Mono', monospace "},
-      height: {'128': '32rem','160': '42rem'},
+      height: {'128': '32rem','160': '44rem'},
     },
   },
   plugins: [],

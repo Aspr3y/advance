@@ -13,10 +13,24 @@ let bgImgUrl = ref<string>('https://images.unsplash.com/photo-1501520158826-76df
         />
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
-        <div class="flex flex-row h-full items-center space-y-4 justify-center relative">
-            <h1 class="text-5xl uppercase text-white leading-6 subpixel-antialiased font-light">
-                Welcome to the Land scaping company 
-            </h1>
+        <div class="flex h-full items-center justify-between px-8 relative">
+
+            <div class="flex flex-col justify-center items-center space-y-6">
+             <h1 class="text-8xl text-green-500 uppercase leading-6 subpixel-antialiased font-light mb-4">
+                Welcome 
+             </h1>
+             <p class="text-3xl text-center uppercase text-white leading-loose subpixel-antialiased font-light">
+                to the landscaping company here we provide
+                Quality landscaping with reliable service.
+             </p>
+             <button 
+              class="mt-4 bg-green-500 px-16 py-2 rounded-md uppercase leading-6 subpixel-antialiased
+              text-white transition-all ease-in hover:bg-white hover:text-green-600 hover:rounded-3xl"
+             >
+                Book today 
+             </button>
+            </div>
+           
         </div>
     </section>
 </template>

@@ -7,6 +7,8 @@ import homepage from '../pages/HomePage.vue'
 import servicePage from '../pages/ServicePage.vue'
 import bookingPage from '../pages/BookingPage.vue'
 import aboutPage from '../pages/AboutPage.vue'
+import signUpPage from '../pages/SignUp.vue'
+import LoginPage from '../pages/LogIn.vue'
 
 const routes: Array<RouteRecordRaw>  = [
    {
@@ -28,6 +30,17 @@ const routes: Array<RouteRecordRaw>  = [
     path:'/about',
     name:'about',
     component: aboutPage
+   }
+   ,
+   {
+    path:'/login',
+    name:'login',
+    component: LoginPage
+   },
+   {
+    path:'/signup',
+    name:'signup',
+    component: signUpPage
    }
 ];
 

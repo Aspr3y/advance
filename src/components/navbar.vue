@@ -22,11 +22,11 @@ let Links = [
 let RegisterLinks = [
     {
         name:'Login',
-        route:''
+        route:'/login'
     },
     {
         name:'Sign Up',
-        route:''
+        route:'/signup'
     }
 ]
 
