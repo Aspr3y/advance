@@ -42,7 +42,7 @@
      class="flex flex-col justify-center w-full py-16 px-12 space-y-4"
     >
         <h1>
-            Our Services
+        Our Services
         </h1>
 
         <div>
