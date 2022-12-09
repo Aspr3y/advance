@@ -4,6 +4,7 @@ import {
     RouteRecordRaw  
 } from 'vue-router'
 import { getAuth,onAuthStateChanged } from 'firebase/auth';
+import 'tw-elements';
 import homepage from '../pages/HomePage.vue'
 import servicePage from '../pages/ServicePage.vue'
 import bookingPage from '../pages/BookingPage.vue'

@@ -46,7 +46,7 @@ const loginWithGoogle = () =>{
   const provider = new GoogleAuthProvider();
     signInWithPopup(getAuth(),provider)
     .then( (result) =>{
-        router.push('/booking')
+        router.push('/')
     }).catch((err) =>{
         alert(err.message);
   });

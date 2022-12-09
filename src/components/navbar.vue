@@ -23,6 +23,10 @@
             name:'About Us',
             route:'/about'
         },
+      {
+        name:'landscaper',
+        route:'/landscaper'
+      },
     ]
 
     let RegisterLinks = [

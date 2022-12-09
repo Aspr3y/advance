@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import router from './router/index'
+import 'tw-elements';
 import { createPinia } from 'pinia'
 
 const app = createApp(App);
@@ -14,12 +15,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCT3g1_T1Gt-UiBUQBRGGQZGJrpmKw5Lr8",
-  authDomain: "landscape-7112d.firebaseapp.com",
-  projectId: "landscape-7112d",
-  storageBucket: "landscape-7112d.appspot.com",
-  messagingSenderId: "33225187589",
-  appId: "1:33225187589:web:9d146460374f616b1d176c"
+  apiKey: "AIzaSyAuq5GHQznHGHomSfa74wRV7c6wxN53wZI",
+  authDomain: "landscaping-680e5.firebaseapp.com",
+  projectId: "landscaping-680e5",
+  storageBucket: "landscaping-680e5.appspot.com",
+  messagingSenderId: "987920024053",
+  appId: "1:987920024053:web:51b0ac11289695980220bc"
 };
 
 initializeApp(firebaseConfig);
