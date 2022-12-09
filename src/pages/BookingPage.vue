@@ -1,4 +1,18 @@
 <script setup lang="ts">
+ import {computed} from "vue";
+ import {BookingStore} from "../store"
+
+ interface x{ image:string,title:string,price:string }
+
+ const store = BookingStore();
+
+ const  getInfo = computed(()=>{
+   return store.getBooking as x;
+ })
+
+ const getName = computed(()=>{
+   return store.getName;
+ })
 </script>
 
 <template>
@@ -18,6 +32,30 @@
           </button>
         </div>
       </div>
+
+     <div class="flex flex-col w-full py-8 px-2 space-y-4">
+
+       <h1>
+         {{getName}}
+       </h1>
+
+       <div class="rounded bg-white px-2 py-4 space-y-4 flex flex-col">
+
+        <h1 class="uppercase">
+          Service: {{getInfo.title}}
+        </h1>
+
+        <h1 class="uppercase">
+         Price: {{getInfo.price}}
+        </h1>
+
+       </div>
+
+       <button class="border py-1 px-8 border-green-500 uppercase text-green-500">
+         Confirm
+       </button>
+
+     </div>
     </div>
 </template>
 
