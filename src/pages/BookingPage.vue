@@ -2,8 +2,7 @@
  import {computed} from "vue";
  import {BookingStore} from "../store"
  import { useFirestore } from 'vuefire'
-
- const db = useFirestore();
+ import firebase from "firebase/compat";
 
  interface x{ image:string,title:string,price:string }
 
@@ -17,8 +16,9 @@
    return store.getName;
  })
 
- function SaveDate(){
-
+ function SaveData(){
+   // Error
+  //  firebase.firestore.Collection('Booking', getInfo.value);
  }
 </script>
 
@@ -58,7 +58,10 @@
 
        </div>
 
-       <button class="border py-1 px-8 border-green-500 uppercase text-green-500">
+       <button
+           @click="SaveData()"
+           class="border py-1 px-8 border-green-500 uppercase text-green-500"
+       >
          Confirm
        </button>
 
