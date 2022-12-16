@@ -1,6 +1,9 @@
 <script setup lang="ts">
  import {computed} from "vue";
  import {BookingStore} from "../store"
+ import { useFirestore } from 'vuefire'
+
+ const db = useFirestore();
 
  interface x{ image:string,title:string,price:string }
 
@@ -13,6 +16,10 @@
  const getName = computed(()=>{
    return store.getName;
  })
+
+ function SaveDate(){
+
+ }
 </script>
 
 <template>
