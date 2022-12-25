@@ -33,8 +33,8 @@ const routes: Array<RouteRecordRaw>  = [
     path:'/about',
     name:'about',
     component: aboutPage
-   }
-   ,
+   },
+
    {
     path:'/login',
     name:'login',

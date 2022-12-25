@@ -65,7 +65,7 @@ const loginWithGoogle = () =>{
                     Welcome Back
                 </h1>
                 <p class="uppercase leading-6 font-light text-green-700">
-                    Lorem ipsum
+
                 </p>
            </div>
           
@@ -136,4 +136,4 @@ const loginWithGoogle = () =>{
             />
         </div>
    </section>
-</template>
+</template> ff

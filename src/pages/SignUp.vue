@@ -52,7 +52,7 @@ const signInWithGoogle = () =>{
                     Welcome
                 </h1>
                 <p class="uppercase leading-6 text-green-500 font-light">
-                    Lorem ipsum
+
                 </p>
            </div>
 

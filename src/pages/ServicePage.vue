@@ -15,32 +15,32 @@
     {
         image:'/lan_img.jpeg',
         title:'Landscaping',
-        price:'$5,500.50 JMD'
+        price:'$2,500.50 JMD'
     },
     {
         image:'/water_img.jpeg',
         title:'Watering',
-        price:'$5,500.50 JMD'
+        price:'$1,200.50 JMD'
     },
     {
         image:'/lawn_img.jpeg',
         title:'Lawn care',
-        price:'$5,500.50 JMD'
+        price:'$3,500.50 JMD'
     },
     {
         image:'/clear_img.jpeg',
         title:'Garden Clearance',
-        price:'$5,500.50 JMD'
+        price:'$4,000.50 JMD'
     },
     {
         image:'/weed_img.jpeg',
         title:'Weed Whacking',
-        price:'$5,500.50 JMD'
+        price:'$2,500.50 JMD'
     },
     {
         image:'/gras_img.jpeg',
         title:'Grass Installation',
-        price:'$5,500.50 JMD'
+        price:'$6,500.50 JMD'
     },
  ]
 
@@ -48,32 +48,32 @@
    {
      image:'/lan_img.jpeg',
      title:'Landscaping',
-     price:'$7,500.50 JMD'
+     price:'$2,500.50 JMD'
    },
    {
      image:'/water_img.jpeg',
      title:'Watering',
-     price:'$6,000.00 JMD'
+     price:'1,000.00 JMD'
    },
    {
      image:'/lawn_img.jpeg',
      title:'Lawn care',
-     price:'$4,250.00 JMD'
+     price:'$4,500.00 JMD'
    },
    {
      image:'/clear_img.jpeg',
      title:'Garden Clearance',
-     price:'$4,500.50 JMD'
+     price:'$5,000.00 JMD'
    },
    {
      image:'/weed_img.jpeg',
      title:'Weed Whacking',
-     price:'$1,500.00 JMD'
+     price:'$2,000.00 JMD'
    },
    {
      image:'/gras_img.jpeg',
      title:'Grass Installation',
-     price:'$3,500.00 JMD'
+     price:'$7,500.00 JMD'
    },
  ]
 
@@ -150,9 +150,9 @@
             <option value="" disabled selected>
               Please select a Landscaper
             </option>
-            <option value="Johnson">Johnson</option>
-            <option value="Carl">Carl</option>
-            <option value="Mark">Mark</option>
+            <option value="Johnson">Johnson Brown hanover</option>
+            <option value="Carl">Carl Whyte St.James </option>
+            <option value="Mark">Mark Golding Manchester</option>
           </select>
         </div>
 
